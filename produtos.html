@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <style>
+     body{
+      font-family: Arial, sans-serif;
+      background-color:#f1f5f9;
+      margin: 0;
+      padding: 0;  
+    }
+    header{
+      background: linear-gradient(135deg, #3016a1, #bb8866);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {background: #1e293b ;}
+    nav ul { 
+      list-style: none; 
+      display: flex;
+      justify-content: center; 
+      gap: 4px;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      display: block;
+      color: #cbd5e1;
+      padding: 12px 22px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover{
+      background: #334155;
+      color: white;
+    }
+    main{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    .produtos-grid{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      width: 200px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .card-img {
+      background: #e2e8f0;
+      height: 130px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .ativo { 
+      color: #2563eb; 
+      font-weight: bold;
+      border-bottom: 2px solid #2563eb; 
+      }
+  </style>
+</head>
+<body>
+    <header>
+    <h1>Nossa Loja</h1>
+    <p>Desenvolido por: Enzo</p>
+  </header>
+  <nav>
+    <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="produtos.html" class="ativo">Produtos</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Nossos Produtos</h2>
+    <div class="produtos-grid">
+      <div class="card">
+        <div class="card-img"></div>
+        <h3>Produto 1</h3>
+        <p>Descrição curta do produto.</p>
+        <span class="preco">R$ 49,90</span>
+      </div>
+        <div class="produtos-grid">
+          <div class="card">
+            <div class="card-img"></div>
+            <h3>Produto 2</h3>
+            <p>Descrição curta do produto.</p>
+            <span class="preco">R$ 49,98</span>
+          </div>
+        </div>
+        <div class="produtos-grid">
+          <div class="card">
+            <div class="card-img"></div>
+            <h3>Produto 3</h3>
+            <p>Descrição curta do produto.</p>
+            <span class="preco">R$ 49,99</span>
+          </div>
+        </div>  
+    </div>
+  </main>
+  <main>
+</body>
+</html>

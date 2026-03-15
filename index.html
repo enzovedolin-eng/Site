@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site | Aprendendo HTML e CSS</title>
+    <style>
+        /* ===== Reset e Base ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: linear-gradient(135deg, #3016a1, #66bb6a);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ===== Navegação ===== */
+        nav {
+            background-color: #1b1b1b;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #ccc;
+            padding: 14px 24px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s, color 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+            color: #fff;
+            border-bottom-color: #66bb6a;
+        }
+
+        /* ===== Conteúdo Principal ===== */
+        main {
+            flex: 1;
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        main p {
+            font-size: 1.05rem;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        main h2 {
+            color: #2e7d32;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+
+        /* ===== Card de destaque ===== */
+        .destaque {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            border-left: 5px solid #2e7d32;
+            padding: 24px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .destaque h2 {
+            margin-top: 0;
+            color: #13939c;
+        }
+
+        .destaque p {
+            color: #2e7d6c;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #1b1b1b;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* ===== Responsivo ===== */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li a {
+                padding: 12px 20px;
+                width: 100%;
+                text-align: center;
+                border-bottom: none;
+                border-left: 3px solid transparent;
+            }
+
+            nav ul li a:hover {
+                border-bottom-color: transparent;
+                border-left-color: #66bb6a;
+            }
+
+            main {
+                padding: 24px 16px 60px;
+            }
+        }
+        .ativo { 
+      color: #2563eb; 
+      font-weight: bold;
+      border-bottom: 2px solid #2563eb; 
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Esse é meu site</h1>
+        <p>Aprendendo HTML e CSS</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="ativo">Inicio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="produtos.html">produtos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Este é o conteúdo principal do meu site.</p>
+        <p>Aqui eu posso colocar textos, imagens, vídeos e muito mais.</p>
+
+        <div class="destaque">
+            <h2>Meu site está funcionando!</h2>
+            <p>Construído com HTML e CSS puro — e ficando cada vez melhor.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

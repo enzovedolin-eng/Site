@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-contato { 
+      max-width: 600px; 
+      margin: 2rem auto; 
+    }
+/* Cada campo (label + input) */
+      .campo { 
+      display: flex; 
+      flex-direction: column; 
+      margin-bottom: 1.2rem; 
+    }
+/* Labels */
+    .campo label { 
+      font-weight: bold; 
+      margin-bottom: 0.4rem; 
+      color: #1e293b; }
+/* Inputs, select e textarea */
+    .campo input,
+    .campo select,
+    .campo textarea {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+     .ativo { 
+      color: #2563eb; 
+      font-weight: bold;
+      border-bottom: 2px solid #2563eb; 
+      }
+
+      body{
+      font-family: Arial, sans-serif;
+      background-color:#f1f5f9;
+      margin: 0;
+      padding: 0;  
+    }
+    header{
+      background: linear-gradient(135deg, #3016a1, #bb8866);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    section{
+      background: linear-gradient(135deg, #3016a1, #bb8866);
+      padding: 16px;
+      margin-top: 16px;
+      border-radius: 12px;
+    }
+    main{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    nav {background: #1e293b ;}
+    nav ul { 
+      list-style: none; 
+      display: flex;
+      justify-content: center; 
+      gap: 4px;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      display: block;
+      color: #cbd5e1;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover{
+      background: #334155;
+      color: white;
+    }
+
+     footer {
+            background-color: #1b1b1b;
+            color: #aaa;
+            text-align: center;
+            margin-top: 20px 30px;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+      footer p {
+            margin: 0;
+          
+        }
+</style>
+</head>
+<body>
+    <header>
+      <h1>Fale Conosco</h1>
+    </header>
+      
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html" class="ativo">Contato</a></li>
+            <li><a href="produtos.html">produtos</a></li>
+        </ul> 
+    </nav>
+    <main>
+      
+      <form action="#" method="post" class="form-contato">
+
+              <!-- CAMPO 1: Nome -->
+        <section>
+      
+            <div class="campo">
+              <label for="nome">
+                Nome completo:
+              </label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite seu nome completo"
+                required>
+            </div>
+             <!-- próximos campos aqui -->
+             <!-- CAMPO 2: E-mail -->
+              <div class="campo">
+                <label for="email">
+                  E-mail:
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="voce@email.com"
+                  required>
+              </div>
+              <!-- CAMPO 3: Assunto -->
+              <div class="campo">
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto" required>
+                  <option value="">-- Selecione o assunto --</option>
+                  <option value="duvida">Dúvida</option>
+                  <option value="orcamento">Orçamento</option>
+                  <option value="sugestao">Sugestão</option>
+                  <option value="reclamacao">Reclamação</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <!-- CAMPO 4: Mensagem -->
+              <div class="campo">
+                <label for="mensagem">Mensagem:</label>
+                  <textarea
+                    name="mensagem"
+                    id="mensagem"
+                    rows="6"
+                    placeholder="Escreva sua mensagem aqui..."
+                    minlength="10"
+                    required>
+                  </textarea>
+              </div>
+              <div class="campo">
+                <button type="submit"
+                  class="btn-enviar">
+                  Enviar mensagem
+                </button>
+              </div>
+                    
+        </section>    
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
